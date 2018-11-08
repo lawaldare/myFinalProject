@@ -7,7 +7,7 @@
 
 
 $(document).ready(function () {
-/*
+
     var key = 'AIzaSyDAg_JYmtAbIcNRgywofmxczJPMmpMuTLs';
     var playlistId = 'PL2fnLUTsNyq7A335zB_RpOzu7hEUcSJbB';
     var URL = 'https://www.googleapis.com/youtube/v3/playlistItems';
@@ -36,7 +36,6 @@ $(document).ready(function () {
 				`);
     }
 
-		
     function resultsLoop(data) {
 
         $.each(data.items, function (i, item) {
@@ -45,7 +44,6 @@ $(document).ready(function () {
             var title = item.snippet.title;
             var desc = item.snippet.description.substring(0, 100);
             var vid = item.snippet.resourceId.videoId;
-
 
             $('main').append(`
 							<article class="item" data-key="${vid}">
@@ -66,7 +64,7 @@ $(document).ready(function () {
         var id = $(this).attr('data-key');
         mainVid(id);
     });
-*/
+/*
 var maxVideos = 5;
 
 $.get(
@@ -102,6 +100,6 @@ $.get(
       }
     );
 
-
+*/
 });
 
