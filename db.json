@@ -1,9 +1,22 @@
 {
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
-  ],
-  "profile": { "name": "typicode" }
+  "users": [
+    {
+      "id": 1,
+      "username": "lawaldare",
+      "email": "lawaldare@gmail.com",
+      "password": "laptop2014"
+    },
+    {
+      "id": 2,
+      "username": "jackson",
+      "email": "jackson@gmail.com",
+      "password": "jackson"
+    },
+    {
+      "username": "",
+      "email": "",
+      "password": "",
+      "id": 3
+    }
+  ]
 }

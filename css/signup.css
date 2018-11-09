@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: 'Satisfy', cursive;
+}
+*:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+body {
+    background: linear-gradient(90deg, #abc, rgba(139, 0, 0, 0.39))
+}
+
+.main {
+    background: antiquewhite;
+    margin: 50px auto;
+    width: 40%;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+header {
+    text-align: center;
+}
+
+.logo p {
+    font-family: 'Diplomata', cursive;
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 10px;
+    border-bottom: 2px solid darkred;
+    text-shadow: 2px 2px 2px darkred;
+}
+h1 {
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+.inputsty {
+    width: 100%;
+    padding: 10px 0 10px 10px;
+    border: none;
+    border-bottom: 1px solid #999;
+    font-size: 1.2rem;
+    background: transparent;
+    letter-spacing: 2px;
+}
+.sub_btn{
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 0;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: .5s;
+}
+
+.sub_btn:hover {
+    background-color: #00796b;
+    font-weight: bolder;
+    color: aliceblue;
+    transform: translateY(-3px);
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    font-weight: bolder;
+    color:darkred;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+}
+.footer a {
+    text-decoration: none;
+}
+
+.icon{
+    width: 30px;
+    font-size: 24px;
+    padding: 8px;
+    text-align: center;
+}
+.formgroup {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+}

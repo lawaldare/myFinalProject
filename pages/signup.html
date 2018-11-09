@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/signup.css" />
+    <link rel="stylesheet" type="text/css" href="../font-awesome/css/font-awesome.css"> 
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Diplomata" rel="stylesheet"> 
+     
+</head>
+<body>
+    <div class="logo-box">
+            <img src="../img/logo-white.png" class="logod">
+    </div>
+    <div class="main">
+        <div class="logo">
+            <p>Sign up</p>
+        </div>
+        <form method="POST" action="" enctype="multipart/form-data">
+            <div class="formgroup">
+                <div class="icon">
+                    <i class="fa fa-user"></i>
+                </div>
+                <div class="input">
+                    <input type="text" name="username" id="username" placeholder="Username" class="inputsty" required>
+                </div>
+            </div>
+            <div class="formgroup">
+                <div class="icon">
+                    <i class="fa fa-envelope"></i>
+                </div>
+                <div class="input">
+                    <input type="email" name="email" id="email" placeholder="Email address" class="inputsty" required>
+                </div>
+            </div>
+            <div class="formgroup">
+                <div class="icon">
+                    <i class="fa fa-lock"></i>
+                    </div>
+                <div class="input">
+                    <input type="password" name="password" id="password" placeholder="Password" class="inputsty" required>
+                </div>
+            </div>
+            <div>
+                <div class="input">
+                    <input type="submit" value="REGISTER NOW" id="register" class="sub_btn">
+                </div>
+            </div>
+        </form>
+        <div class="footer">
+            <p>Already have an account? &nbsp; <a href="./signin.html">Login</a></p>
+        </div>
+    </div>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/signup.js"></script>
+</body>
+</html>
