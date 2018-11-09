@@ -24,7 +24,7 @@ $(document).ready(function () {
 
     function loadVids() {
         $.getJSON(URL, options, function (data) {
-            var id = data.items[0].snippet.resourceId.videoId;
+            var vid = data.items[0].snippet.resourceId.videoId;
             mainVid(id);
             resultsLoop(data);
         });
@@ -32,7 +32,7 @@ $(document).ready(function () {
 
     function mainVid(id) {
         $('#video').html(`
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/${id}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/${vid}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 				`);
     }
 
