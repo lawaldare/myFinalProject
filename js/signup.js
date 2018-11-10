@@ -19,8 +19,8 @@ $(document).ready(function() {
     }
 
 
-    $("#register").click(function() {
-        baseUrl = 'http://localhost:3000/users';
+    $("#signup").click(function() {
+        baseUrl = 'http://localhost:3000/users'
         var username = $("#username").val();
         var email = $("#email").val();
         var password = $("#password").val();

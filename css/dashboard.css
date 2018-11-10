@@ -22,12 +22,12 @@ p {
 }
 
 body {
-	background-color: #eee;
+	background: linear-gradient(90deg, #abc, rgba(139, 0, 0, 0.561));
 }
 
 .container {
 	width: 700px;
-	background-color: #fff;
+	background: linear-gradient(90deg, #abc, rgba(139, 0, 0, 0.561));
 	margin: 0 auto;
 }
 
@@ -36,7 +36,7 @@ section {
 	position: absolute;
 	text-align: center;
 	width: 700px;
-	background-color: #fff;
+	background: linear-gradient(90deg, #abc, rgba(139, 0, 0, 0.294));
 }
 
 section {
