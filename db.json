@@ -7,16 +7,40 @@
       "password": "laptop2014"
     },
     {
-      "id": 2,
-      "username": "jackson",
-      "email": "jackson@gmail.com",
-      "password": "jackson"
+      "username": "adesewa",
+      "email": "as@g.com",
+      "password": "iloveyouboo",
+      "id": 2
     },
     {
-      "username": "",
-      "email": "",
-      "password": "",
+      "username": "opeoluwa",
+      "email": "omoyanre@yahoo.com",
+      "password": "opeoluwa",
       "id": 3
+    },
+    {
+      "username": "victor",
+      "email": "victor@hotmail.com",
+      "password": "laptop",
+      "id": 4
+    },
+    {
+      "username": "cfhkgdszdskh",
+      "email": "bmdfxvkhgzdkhb2@g.com",
+      "password": ",mdfgjdrgjoh",
+      "id": 5
+    },
+    {
+      "username": "mdkhgzesfih",
+      "email": "1nbdsfhkgzfseiherf@1.com",
+      "password": "",
+      "id": 6
+    },
+    {
+      "username": "hmdfbegaiaygBJAWEFG",
+      "email": "JBXDHBBIYERAWR@e.com",
+      "password": ",nhjoojrjohe",
+      "id": 7
     }
   ]
 }

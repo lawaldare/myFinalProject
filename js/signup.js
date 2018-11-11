@@ -1,32 +1,56 @@
 
 $(document).ready(function() {
-    function create(data) {
-  let options = {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(data)
-  }
-  return fetch(baseUrl, options)
-    .then((response) => response.json)
-}
-
-   function Createuser(username, email, password){
-        this.username =username;
-        this.email = email;
-        this.password = password;
-    }
 
 
-    $("#signup").click(function() {
-        baseUrl = 'http://localhost:3000/users'
-        var username = $("#username").val();
-        var email = $("#email").val();
-        var password = $("#password").val();
-        
-    let user = new Createuser(username, email, password);
+$("#loginn").click(function(){
+		var username = $("#username").val();
+    //var email = $("#email").val();
+    var password = $("#password").val();
+		alert(username);
+		//alert(email);
+    alert(password);
+		
+		var url = 'http://localhost:3000/users';
 
-    create(user);
-});
+		$.get(url,
+		{
+			username: username,
+			email: email,
+      password: password,
+			
+		},
+		
+		
+		function(data, status) {
+		  alert("Data: " + data + "\nStatus: " + status);
+		});
+				
+	});
+
+
+$("#signup").click(function(){
+		var username = $("#usernamee").val();
+    var email = $("#emaill").val();
+    var password = $("#passwordd").val();
+		alert(username);
+		//alert(email);
+    //alert(password);
+		
+		var url = 'http://localhost:3000/users';
+
+		$.post(url,
+		{
+			username: username,
+			email: email,
+      password: password,
+			
+		},
+		
+		
+		function(data, status) {
+		  alert("Data: " + data + "\nStatus: " + status);
+		});
+				
+	});
+
 });
