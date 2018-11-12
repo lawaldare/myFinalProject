@@ -130,3 +130,32 @@ body {
     transform: translateY(-1px);
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
 }
+
+
+@media only screen and (max-width:958px) {
+    .heading-primary-main {
+        font-size: 40px;
+        letter-spacing: 20px;
+    }
+    .heading-primary-sub {
+        font-size: 15px;
+        letter-spacing: 10px;
+        font-weight: bolder;
+    }
+    .logo-box {
+        position: absolute;
+        left:120px;
+    }
+    .logo {
+        height: 50px;
+    }
+    .btn-white {
+        background-color: white;
+        color:darkred;
+        letter-spacing: 0px;
+        font-weight: 800;
+    }
+    .btn {
+        margin-left: 0px;
+    }
+}
