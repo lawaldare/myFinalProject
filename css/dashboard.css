@@ -1,80 +1,23 @@
-@mixin font-base {
-	padding: 0;
-	margin: 0;
-	line-height: 1.3;
-	font-weight: 600;
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/css/mdb.min.css);
+
+.hm-gradient {
+    background-color: #eee;
+}
+.darken-grey-text {
+    color: #2E2E2E;
 }
 
-h4 {
-	@include font-base;
+#main {
+	padding: 0px 10px 0px;
 }
-
-.header {
-    font-size: 20px;
-    padding-top: 10px;
-	letter-spacing: 5px;
-	position: relative;
-}
-
-.logo-box {
-    position: absolute;
-    top: 40px;
-    left:40px;
-}
-.logo {
-	height: 120px;
-	width: 150px;
-}
-.logout {
-    position: absolute;
-    top: 40px;
-    right:40px;
-}
-.logout a {
-	text-decoration: none;
-	font-size: 2rem;
-}
-
-
-p {
-	@include font-base;
-	color: grey;
-	font-size: 0.7rem;
-}
-
 body {
 	background: url('https://images.pexels.com/photos/995301/pexels-photo-995301.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
 }
 
-.container {
-	width: 700px;
-	background-color: #E8DDD7;
-	margin: 0 auto;
-}
-
-header,
-section {
-	position: absolute;
-	text-align: center;
-	width: 700px;
-	background-color: #E8DDD7;
-}
-
-section {
-	top: 50px;
-}
-
-.logo {
-	width: 120px;
-	padding: 10px;
-}
-
-main {
-	padding: 370px 0px 10px;
-}
-
 article {
-    width: 700px;
+    width: 600px;
+    height: 550px;
 	display: inline-block;
 	align-items: center;
 	margin: 0 auto;
@@ -84,40 +27,23 @@ article {
 }
 
 .thumb {
-	height: 70px;
+	height: 0px;
     border-radius: 4px;
     display: none;
 }
 
-.details {
-    padding: 8px 22px;
-    display: block;
+.logo-box {
+    position: absolute;
+    top: 10px;
+    left:20px;
+}
+.logo {
+	height: 120px;
+    width: 150px;
+    
 }
 
-.header {
-	color:darkred;
-	font-size: 2rem;
-	font-weight: bold;
-}
-
-
-
-/*Resonsiveness*/
-
-@media only screen and (max-width: 716px) {
-	.container, header,
-	section {
-	position: absolute;
-	text-align: center;
-	width: 500px;
-	background-color: #E8DDD7;
-	}
-
-	#video, main {
-		width: 500px;
-		margin-bottom: 10px;
-		height: 315px;
-		position: absolute;
-		left:0;
-	}
+h1 {
+    word-spacing: 3px;
+    letter-spacing: 10px;
 }

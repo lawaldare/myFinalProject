@@ -41,6 +41,12 @@
       "email": "darego@gmail.com",
       "password": "dare",
       "id": 9
+    },
+    {
+      "username": "anginess",
+      "email": "anginess@do.com",
+      "password": "angi",
+      "id": 10
     }
   ]
 }

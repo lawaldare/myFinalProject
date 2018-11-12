@@ -38,14 +38,17 @@ var key = 'AIzaSyDAg_JYmtAbIcNRgywofmxczJPMmpMuTLs';
             var desc = item.snippet.description.substring(0, 100);
             var vid = item.snippet.resourceId.videoId;
 
-            $('main').append(`
+            $('#main').append(`<div class="row">
+                            <div class="col-md-12 mb-4">
 							<article class="item" data-key="${vid}">
 								<div class="details">
 									<h4>${title}</h4>
 									<p>${desc}</p>
 								</div>
-                                <iframe width="700" height="315" src="https://www.youtube.com/embed/${vid}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                <iframe width="700" height="700" src="https://www.youtube.com/embed/${vid}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 							</article>
+                            </div>
+                            </div>
 						`);
         });
     }

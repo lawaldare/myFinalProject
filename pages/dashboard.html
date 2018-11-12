@@ -5,38 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Dashboard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="../css/dashboard.css"/>
     <link rel="icon" href="../img/logo.jpeg">
 </head>
 <body>
-    
-    <div class="container">
+        <div class="container mt-4">
 
-            <div class="logo-box">
-                    <img src="../img/youtube.png" class="logo">
-            </div>
-            <div class="logout">
-                <a href="/pages/signup.html#tologin"class="lgout">Log Out</a>
-            </div>
-
-        <header>
-            <span class="header">Youtube Trending Gospel Music Video</span>
-            
-        </header>
+                <div class="text-center darken-grey-text mb-4">
+                        <h1 class="font-bold mt-4 mb-3 h5" style="color: #FF4F5E; font-weight: bold; text-transform: uppercase;">Youtube Trending Gospel Music Video</h1>
+                        <a class="btn btn-danger btn-md" href="./signup.html#tologin target="_blank">Log out<i class="fa fa-download pl-2"></i></a>
+                </div>
+                <div class="logo-box">
+                        <img src="../img/youtube.png" class="logo">
+                </div>
     
-        <section id="video">
+                <!-- Grid row -->
+                <div class="row">
                 
-        </section>
-        
-        <main>
+                    <!-- Grid column -->
+                    <div class="col-md-12 mb-4">
+                
+                        <div class="card">
+                            <div class="card-block p-3">
+                                <!--Title-->
+                                <h3 class="text-center font-up font-bold indigo-text py-2 mb-3"></h3>
     
-        </main>
+                                <div class="embed-responsive embed-responsive-16by9" id="video">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vlDzYIIOYmM" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                
+                    </div>
+                    <!-- Grid column -->
+                
+                </div>
+                <!-- Grid row -->
+              
+                <!-- Grid row -->
+                <div class="row">
+                
+                        <!-- Grid column -->
+                        <div class="col-md-12 mb-4">
+                    
+                            <div class="card">
+                                <div class="card-block p-3">
+                                    <!--Title-->
+                                    <h3 class="text-center font-up font-bold indigo-text py-2 mb-3"></h3>
         
+                                    <div class="embed-responsive embed-responsive-16by9" id="main">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                    
+                        </div>
+                        <!-- Grid column -->
+                    
+                    </div>
+                <!-- Grid row -->
+              
+                <hr class="my-4">
+            </div>
     
-    </div>
     
     <script src="../js/jquery.js"></script>
-    <script src="../js/main.js"></script>
+    <script src="../js/dashboard.js"></script>
 </body>
 </html>
