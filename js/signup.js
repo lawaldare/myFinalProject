@@ -1,58 +1,42 @@
-
 $(document).ready(function() {
 
 // SIGN UP
-$("#signup").click(function(){
-		var username = $("#usernamee").val();
+
+$('#signupform').submit(function(event) {
+	var username = $("#usernamee").val();
     var email = $("#emaill").val();
     var password = $("#passwordd").val();
-		alert(username);
-		//alert(email);
-    //alert(password);
-		var url = 'http://localhost:3000/users';
-		$.post(url,
-		{
-			username: username,
-			email: email,
-      password: password,
-		},
-		
-		function(data, status) {
-		  alert("Data: " + data + "\nStatus: " + status);
-		});
-	});
-
+    const redirectToDashboard = function(data, status, jqXHR) {
+        if(typeof(data) == 'object') {
+            window.location.replace('/pages/signup.html#tologin');
+        }
+        };
+        if ($('#passwordd').val() !== $('#cpasswordd').val()) {
+            alert("Your password does not match");
+        } else {
+            const data = {
+				username: username,
+                email: email,
+                password: password
+            };
+            $.post('http://localhost:3000/users', data, redirectToDashboard, 'json');
+            event.preventDefault();
+        }
+    });
 
 // LOG IN
-$('#loginn').click(function(){
-	var username = $("#username").val();
-    var password = $("#password").val();
-    var error = true;
 
-    //$('#loading').html("<img src=''>").fadeIn('fast');
-
-    $.ajax ({
-    	type: "GET",
-    	url: url,
-    	dataType: "json",
-    	success: function(data){
-    		$('#loading').fadeOut('fast');
-
-    		$.each(data, function (key, value) {
-    			if(username == value.username && password == value.password) {
-    				error = false;
-    			}
-    		});
-
-    		if (error == false) {
-    		 	document.location = "/pages/dashboard.html";
-    		} else {
-    			$('#wrapper').slideUp('slow').slideDown('slow');
-    			$('#username').val('');
-    			$('#password').val('');
-    		}
-    	}
+$('#loginform').submit(function(event) {
+        const redirectToDashboard = function(data, status, jqXHR) {
+            if(typeof(data) == 'object' && data.length > 0) {
+                window.location.replace('/pages/dashboard.html');
+            } else{
+				alert('User does not exist');
+                //$('#alert').html('<h2>User does not exist</h2>');
+            }
+        };
+        $.get(`http://localhost:3000/users/?username=${$('#username').val()}&password=${$('#password').val()}`, redirectToDashboard);
+        event.preventDefault();
     });
-    return false;
-  });
+
 });

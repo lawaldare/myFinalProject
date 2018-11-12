@@ -12,8 +12,29 @@ h4 {
 .header {
     font-size: 20px;
     padding-top: 10px;
-    letter-spacing: 5px;
+	letter-spacing: 5px;
+	position: relative;
 }
+
+.logo-box {
+    position: absolute;
+    top: 40px;
+    left:40px;
+}
+.logo {
+	height: 120px;
+	width: 150px;
+}
+.logout {
+    position: absolute;
+    top: 40px;
+    right:40px;
+}
+.logout a {
+	text-decoration: none;
+	font-size: 2rem;
+}
+
 
 p {
 	@include font-base;
@@ -22,12 +43,12 @@ p {
 }
 
 body {
-	background: linear-gradient(90deg, #abc, rgba(139, 0, 0, 0.561));
+	background: url('https://images.pexels.com/photos/995301/pexels-photo-995301.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
 }
 
 .container {
 	width: 700px;
-	background: linear-gradient(90deg, #abc, rgba(139, 0, 0, 0.561));
+	background-color: #E8DDD7;
 	margin: 0 auto;
 }
 
@@ -36,7 +57,7 @@ section {
 	position: absolute;
 	text-align: center;
 	width: 700px;
-	background: linear-gradient(90deg, #abc, rgba(139, 0, 0, 0.294));
+	background-color: #E8DDD7;
 }
 
 section {
@@ -56,7 +77,6 @@ article {
     width: 700px;
 	display: inline-block;
 	align-items: center;
-	border: 2px solid white;
 	margin: 0 auto;
 	&:hover {
 		border: 2px solid #ff9999;
@@ -72,4 +92,32 @@ article {
 .details {
     padding: 8px 22px;
     display: block;
+}
+
+.header {
+	color:darkred;
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+
+
+/*Resonsiveness*/
+
+@media only screen and (max-width: 716px) {
+	.container, header,
+	section {
+	position: absolute;
+	text-align: center;
+	width: 500px;
+	background-color: #E8DDD7;
+	}
+
+	#video, main {
+		width: 500px;
+		margin-bottom: 10px;
+		height: 315px;
+		position: absolute;
+		left:0;
+	}
 }

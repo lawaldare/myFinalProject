@@ -8,6 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 		<link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
         <link rel="stylesheet" type="text/css" href="../css/signup.css">
 		
@@ -17,7 +18,9 @@
            
             <header>
                 <h1>Login and Registration Form</h1>
-				
+                <div class="logo-box">
+                    <img src="/img/youtube.png" class="logo">
+                </div>
             </header>
             <section>				
                 <div id="container_demo" >
@@ -29,7 +32,7 @@
 
                             <!--LOGIN FORM-->
 
-                            <form method="GET" action=""> 
+                            <form method="POST" action="" id="loginform">
                                 <h1>Log in</h1> 
                                 <p> 
                                     <label for="username" class="uname" > Your username </label>
@@ -41,14 +44,12 @@
                                 </p>
                                 <p class="signin button"> 
                                         <input type="submit" id="loginn" value="Sign in"/> 
-                                    </p>
-                                <p class="login button"> 
-                                   <a href="http://cookingfoodsworld.blogspot.in/" target="_blank" ></a>
-								</p>
+                                </p>
                                 <p class="change_link">
 									Not a member yet ?
 									<a href="#toregister" class="to_register">Join us</a>
-								</p>
+                                </p>
+                                <span id="alert" class="text-danger"></span>
                             </form>
                         </div>
 
@@ -58,20 +59,27 @@
 
                             <!--SIGN UP-->
 
-                            <form method="POST" action="" enctype="multipart/form-data"> 
+                            <form method="POST" action="" id="signupform"> 
                                 <h1> Sign up </h1> 
                                 <p> 
                                     <label for="usernamesignup" class="uname" >Your username</label>
                                     <input id="usernamee" name="usernamesignup" required="required" type="text" placeholder="mysuperusername690" />
                                 </p>
+                                <span id="error_username" class="text-danger"></span>
                                 <p> 
                                     <label for="emailsignup" class="youmail"  > Your email</label>
                                     <input id="emaill" name="emailsignup" required="required" type="email" placeholder="mysupermail@mail.com"/> 
                                 </p>
+                                <span id="error_email" class="text-danger"></span>
                                 <p> 
                                     <label for="passwordsignup" class="youpasswd" >Your password </label>
                                     <input id="passwordd" name="passwordsignup" required="required" type="password" placeholder="eg. X8df!90EO"/>
                                 </p>
+                                <p> 
+                                    <label for="passwordsignup" class="youpasswd" >Confirm Password</label>
+                                    <input id="cpasswordd" name="passwordsignup" required="required" type="password"/>
+                                </p>
+                                <span id="error_password" class="text-danger"></span>
                                 <p class="signin button"> 
 									<input id="signup" type="submit" value="Sign up"/> 
 								</p>

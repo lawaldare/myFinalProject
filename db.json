@@ -7,22 +7,40 @@
       "password": "laptop2014"
     },
     {
-      "username": "adesewa",
-      "email": "as@g.com",
-      "password": "iloveyouboo",
-      "id": 2
-    },
-    {
-      "username": "opeoluwa",
-      "email": "omoyanre@yahoo.com",
-      "password": "opeoluwa",
-      "id": 3
-    },
-    {
       "username": "a",
       "email": "a@a.com",
       "password": "a",
       "id": 4
+    },
+    {
+      "username": "adn",
+      "email": "adn@adn.org",
+      "password": "adn",
+      "id": 5
+    },
+    {
+      "username": "Jommy",
+      "email": "lawaldare@gmail.com",
+      "password": "dare",
+      "id": 6
+    },
+    {
+      "username": "adesewa",
+      "email": "adesewa@dare.org",
+      "password": "dare",
+      "id": 7
+    },
+    {
+      "username": "salah",
+      "email": "salah@liverpoolfc.com",
+      "password": "salah",
+      "id": 8
+    },
+    {
+      "username": "darego",
+      "email": "darego@gmail.com",
+      "password": "dare",
+      "id": 9
     }
   ]
 }
