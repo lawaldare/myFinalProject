@@ -4481,3 +4481,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	-o-animation-name: scaleIn;
 	animation-name: scaleIn;
 }
+
+#msg {
+	display:none;
+}

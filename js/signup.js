@@ -13,7 +13,9 @@ $('#signupform').submit(function(event) {
         };
         if ($('#passwordd').val() !== $('#cpasswordd').val()) {
             alert("Your password does not match");
+            return false;
         } else {
+            alert('Registration Successful');
             const data = {
 				username: username,
                 email: email,
