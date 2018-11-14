@@ -41,7 +41,7 @@ $('#target').change(function(){
       part: 'snippet',
       chart: 'mostPopular',
       kind: 'youtube#videoListResponse',
-      maxResults: 30,
+      maxResults: 50,
       regionCode: selectedValue,
       key: 'AIzaSyDAg_JYmtAbIcNRgywofmxczJPMmpMuTLs'},
       function(data){
