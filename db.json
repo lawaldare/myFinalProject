@@ -11,6 +11,18 @@
       "email": "a2ddn@adn.org",
       "password": "a",
       "id": 2
+    },
+    {
+      "username": "amaterasu",
+      "email": "mogbeyidavid@gmail.com",
+      "password": "kernel23",
+      "id": 3
+    },
+    {
+      "username": "omotola",
+      "email": "omotola@gmail.com",
+      "password": "1234",
+      "id": 4
     }
   ]
 }
