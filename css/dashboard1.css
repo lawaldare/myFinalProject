@@ -12,7 +12,7 @@
 
 
 body {
-	background: url(https://www.planwallpaper.com/static/images/milky_way_stars_mountains_night_germany_bavaria_sky_45888_1920x1080.jpg);
+	background-color: #FAFAFA;
 }
 
 article {
@@ -57,13 +57,13 @@ h1 {
     letter-spacing: 10px;
 }
 .rows {
-    background-color: rgba(221, 43, 40, 0.561);
+    background-color: #83753C;
     border-radius: 10px;
 }
 #myform select {
     border: 0;
-    color: #DD2C28;
-    background: transparent;
+    color: black;
+    background: rgba(191, 33, 38, 0.418);
     font-size: 20px;
     font-weight: bold;
     padding: 2px 10px;
@@ -133,11 +133,19 @@ h1 {
 @media only screen and (max-width: 526px){
     #region {
         right: 25%;
+        top: 130px;
     }
-}    
+}
+@media only screen and (max-width: 636px){
+    #region {
+        right: 30%;
+        top: 130px;
+    }
+} 
 @media only screen and (max-width: 466px){
     #region {
         right: 25%;
+        top: 170px;
     }
 } 
 @media only screen and (max-width: 436px){
