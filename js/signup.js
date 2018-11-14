@@ -34,7 +34,6 @@ $('#loginform').submit(function(event) {
                 window.location.replace('/pages/dashboard1.html');
             } else{
 				alert('User does not exist');
-                //$('#alert').html('<h2>User does not exist</h2>');
             }
         };
         $.get(`http://localhost:3000/users/?username=${$('#username').val()}&password=${$('#password').val()}`, redirectToDashboard);

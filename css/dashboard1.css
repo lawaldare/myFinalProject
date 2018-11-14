@@ -1,80 +1,23 @@
-@mixin font-base {
-	padding: 0;
-	margin: 0;
-	line-height: 1.3;
-	font-weight: 600;
-}
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/css/mdb.min.css);
 
-h4 {
-	@include font-base;
+.hm-gradient {
+    background-color: #abc;
 }
-
-.header {
-    font-size: 20px;
-    padding-top: 10px;
-	letter-spacing: 5px;
-	position: relative;
-}
-
-.logo-box {
-    position: absolute;
-    top: 40px;
-    left:40px;
-}
-.logo {
-	height: 120px;
-	width: 150px;
-}
-.logout {
-    position: absolute;
-    top: 40px;
-    right:40px;
-}
-.logout a {
-	text-decoration: none;
-	font-size: 2rem;
+.darken-grey-text {
+    color: #2E2E2E;
 }
 
 
-p {
-	@include font-base;
-	color: grey;
-	font-size: 0.7rem;
-}
+
 
 body {
-	background: url('https://images.pexels.com/photos/995301/pexels-photo-995301.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-}
-
-.container {
-	width: 700px;
-	background-color: #E8DDD7;
-	margin: 0 auto;
-}
-
-header,
-section {
-	position: absolute;
-	text-align: center;
-	width: 700px;
-	background-color: #E8DDD7;
-}
-
-section {
-	top: 50px;
-}
-
-.logo {
-	width: 120px;
-	padding: 10px;
-}
-
-main {
-	padding: 370px 0px 10px;
+	background-color: aliceblue;
 }
 
 article {
-    width: 700px;
+    width: 600px;
+    height: 550px;
 	display: inline-block;
 	align-items: center;
 	margin: 0 auto;
@@ -83,41 +26,122 @@ article {
 	}
 }
 
-.thumb {
-	height: 70px;
-    border-radius: 4px;
-    display: none;
+#results::before {
+    padding-top: 0%;
 }
 
-.details {
-    padding: 8px 22px;
-    display: block;
+.logo-box {
+    position: absolute;
+    top: 10px;
+    left:20px;
+}
+.logo {
+	height: 120px;
+    width: 150px;
+}
+#region {
+    position: absolute;
+    top: 40px;
+    right:20px;
+}
+.change {
+    font-size: 1.3rem;
 }
 
-.header {
-	color:darkred;
-	font-size: 2rem;
-	font-weight: bold;
+.oops {
+    padding: 20px 20px;
 }
 
-
-
-/*Resonsiveness*/
-
-@media only screen and (max-width: 716px) {
-	.container, header,
-	section {
-	position: absolute;
-	text-align: center;
-	width: 500px;
-	background-color: #E8DDD7;
-	}
-
-	#video, main {
-		width: 500px;
-		margin-bottom: 10px;
-		height: 315px;
-		position: absolute;
-		left:0;
-	}
+h1 {
+    word-spacing: 3px;
+    letter-spacing: 10px;
 }
+.rows {
+    background-color: rgba(221, 43, 40, 0.561);
+    border-radius: 10px;
+}
+#myform select {
+    border: 0;
+    color: #DD2C28;
+    background: transparent;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 2px 10px;
+    width: 378px;
+    *width: 350px;
+    *background: #58B14C;
+    -webkit-appearance: none;
+ }
+ 
+ #myform {
+    overflow:hidden;
+    width:230px;
+    -moz-border-radius: 9px 9px 9px 9px;
+    -webkit-border-radius: 9px 9px 9px 9px;
+    border-radius: 9px 9px 9px 9px;
+    box-shadow: 1px 1px 11px #330033;
+    background: #58B14C url("http://i62.tinypic.com/15xvbd5.png") no-repeat scroll 199px center;
+ }
+ 
+
+@media only screen and (max-width: 974px) {
+    h1 {
+    word-spacing: 0;
+    letter-spacing: 2px;
+
+    }
+    .logo-box {
+        position: absolute;
+        top: 50px;
+        left:0px;
+    }
+    .logo {
+        height: 80px;
+        width: 100px;
+        
+    }
+}
+
+@media only screen and (max-width: 860px){
+    #region {
+        top: 60px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    article {
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 640px){
+    #region {
+        top: 120px;
+        right: 30%;
+    }
+
+    #myform select {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 2px 10px;
+    }
+    .rowsy {
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (max-width: 526px){
+    #region {
+        right: 25%;
+    }
+}    
+@media only screen and (max-width: 466px){
+    #region {
+        right: 25%;
+    }
+} 
+@media only screen and (max-width: 436px){
+    #region {
+        right: 20%;
+    }
+} 

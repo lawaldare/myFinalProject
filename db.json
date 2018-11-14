@@ -13,10 +13,28 @@
       "id": 2
     },
     {
-      "username": "omotola",
-      "email": "o@o.com",
-      "password": "1234",
+      "username": "amaterasu",
+      "email": "mogbeyidavid@gmail.com",
+      "password": "kernel23",
       "id": 3
+    },
+    {
+      "username": "omotola",
+      "email": "omotola@gmail.com",
+      "password": "1234",
+      "id": 4
+    },
+    {
+      "username": "sare",
+      "email": "sare@gmail.com",
+      "password": "dare",
+      "id": 5
+    },
+    {
+      "username": "david_mogbeyi",
+      "email": "mogbeyidavid@gmail.com",
+      "password": "helloworld",
+      "id": 6
     }
   ]
 }
