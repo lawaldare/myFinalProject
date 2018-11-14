@@ -35,6 +35,30 @@
       "email": "mogbeyidavid@gmail.com",
       "password": "helloworld",
       "id": 6
+    },
+    {
+      "username": "a",
+      "email": "adesewa@dare.org",
+      "password": "as",
+      "id": 7
+    },
+    {
+      "username": "a",
+      "email": "a@j.com",
+      "password": "a",
+      "id": 8
+    },
+    {
+      "username": "a",
+      "email": "adesewa@dare.org",
+      "password": "a",
+      "id": 9
+    },
+    {
+      "username": "a",
+      "email": "adesewa@dare.org",
+      "password": "a",
+      "id": 10
     }
   ]
 }
