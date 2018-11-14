@@ -1,18 +1,16 @@
   var vidHeight = 400;  
   var vidWidth = 500;
-  //var region = prompt('choose your trending video region, e.g. NG for Nigeria, IN for India, US for USA', 'NG').toUpperCase();  
-  //var selectedValue = 'NG';
 $(document).ready(function () {  
  $.get(
     "https://www.googleapis.com/youtube/v3/videos",{
       part: 'snippet',
       chart: 'mostPopular',
       kind: 'youtube#videoListResponse',
-      maxResults: 30,
+      maxResults: 50,
       regionCode: 'NG',
       key: 'AIzaSyDAg_JYmtAbIcNRgywofmxczJPMmpMuTLs'},
       function(data){
-        //var output;
+
         $.each(data.items, function(i, item){
             var title = item.snippet.title;
             var desc = item.snippet.description.substring(0, 250);
