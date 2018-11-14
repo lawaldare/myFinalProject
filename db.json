@@ -11,6 +11,12 @@
       "email": "a2ddn@adn.org",
       "password": "a",
       "id": 2
+    },
+    {
+      "username": "omotola",
+      "email": "o@o.com",
+      "password": "1234",
+      "id": 3
     }
   ]
 }

@@ -31,7 +31,7 @@ $('#signupform').submit(function(event) {
 $('#loginform').submit(function(event) {
         const redirectToDashboard = function(data, status, jqXHR) {
             if(typeof(data) == 'object' && data.length > 0) {
-                window.location.replace('/pages/dashboard.html');
+                window.location.replace('/pages/dashboard1.html');
             } else{
 				alert('User does not exist');
                 //$('#alert').html('<h2>User does not exist</h2>');
