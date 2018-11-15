@@ -68,7 +68,7 @@ body {
     display:block;
     font-size: 20px;
     font-weight: 700;
-    letter-spacing: 11px;
+    letter-spacing: 25px;
     text-shadow: 0 0 20px #ff005b;
     animation: moveInRight 1s ease-out;
 }
