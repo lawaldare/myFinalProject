@@ -26,7 +26,7 @@ body {
     background-image: linear-gradient(to right bottom,
      rgba(0, 255, 255, 0.5),
       rgba(42, 144, 240, 0.5)),
-       url(../img/hero.jpg);
+       url(../img/netflix.jpg);
     background-position: bottom;
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -59,6 +59,7 @@ body {
     font-size: 60px;
     font-weight: 400;
     letter-spacing: 35px;
+    text-shadow: 0 0 20px #ff005b;
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
@@ -68,6 +69,7 @@ body {
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 11px;
+    text-shadow: 0 0 20px #ff005b;
     animation: moveInRight 1s ease-out;
 }
 
