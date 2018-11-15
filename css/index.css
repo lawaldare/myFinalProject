@@ -61,7 +61,7 @@ body {
     letter-spacing: 35px;
     text-shadow: 0 0 20px #ff005b;
     animation-name: moveInLeft;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-timing-function: ease-out;
 }
 .heading-primary-sub {
@@ -70,7 +70,7 @@ body {
     font-weight: 700;
     letter-spacing: 25px;
     text-shadow: 0 0 20px #ff005b;
-    animation: moveInRight 1s ease-out;
+    animation: moveInRight 2s ease-out;
 }
 
  @keyframes moveInLeft {
