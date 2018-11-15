@@ -65,6 +65,24 @@
       "email": "ad@yahoo.com",
       "password": "a",
       "id": 11
+    },
+    {
+      "username": "kingsley",
+      "email": "h@yahoo.com",
+      "password": "a",
+      "id": 12
+    },
+    {
+      "username": "a",
+      "email": "anginess@do.com",
+      "password": "as",
+      "id": 13
+    },
+    {
+      "username": "a",
+      "email": "adesewa@dare.org",
+      "password": "a",
+      "id": 14
     }
   ]
 }

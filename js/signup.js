@@ -8,7 +8,7 @@ $('#signupform').submit(function(event) {
     var password = $("#passwordd").val();
     const redirectToDashboard = function(data, status, jqXHR) {
         if(typeof(data) == 'object') {
-            window.location.replace('pages/signup.html#tologin');
+            window.location.replace('/pages/signup.html#tologin');
         }
         };
         if ($('#passwordd').val() !== $('#cpasswordd').val()) {
