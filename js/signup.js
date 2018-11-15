@@ -12,10 +12,10 @@ $('#signupform').submit(function(event) {
         }
         };
         if ($('#passwordd').val() !== $('#cpasswordd').val()) {
-            alert("Your password does not match");
+            swal("Your password does not match","Please check it again");
             return false;
         } else {
-            alert('Registration Successful');
+            swal('Registration Successful','Welcome on board','success');
             const data = {
 				username: username,
                 email: email,
