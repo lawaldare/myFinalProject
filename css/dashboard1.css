@@ -1,6 +1,6 @@
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.4.3/css/mdb.min.css);
-
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
 .hm-gradient {
     background-color: #abc;
 }
@@ -8,11 +8,31 @@
     color: #2E2E2E;
 }
 
-
-
+.neon {
+    position: relative;
+	margin: 0;
+    padding: 0 20px;
+    font-weight: bold;
+    font-size: 2em;
+    font-family:'Quicksand', sans-serif; 
+	color: #fff;
+	text-shadow: 0 0 20px #ff005b;
+}
+.neon:after {
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0 20px;
+	z-index: -1;
+	color: #ff005b;
+	filter: blur(15px);
+}
 
 body {
-	background: url(http://www.aonecomputer.com/wp-content/uploads/2018/07/netflix-768x432.jpg);
+    background: url(../img/bg.jpg);
+    background-size: contain;
+	font-family: 'Quicksand', sans-serif;
 }
 
 article {
@@ -56,9 +76,18 @@ h1 {
     word-spacing: 3px;
     letter-spacing: 10px;
 }
-.rows {
-    background-color: #FF4F5E;
+.rowsy {
+    background: transparent;
     border-radius: 10px;
+    border: 1px solid blue;
+}
+
+.loo {
+    background-color: red;
+}
+
+.rowyy {
+    border: 1px solid blue;
 }
 #myform select {
     border: 0;
