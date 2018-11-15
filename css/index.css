@@ -10,7 +10,7 @@ body {
     color: gray;
     font-size: 1rem;
     padding: 5px;
-    background: linear-gradient(90deg, #abc, rgba(139, 0, 0, 0.39))
+    background: rgba(193, 34, 39, 0.781);
 }
 .btn {
     margin-left: 50px;
