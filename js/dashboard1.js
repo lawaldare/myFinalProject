@@ -16,7 +16,7 @@ $(document).ready(function () {
             var desc = item.snippet.description.substring(0, 300);
             var vid = item.id;
             $('#results').append(`
-            <div class="row" style="margin-bottom: 50px; padding: 30px; background-color: white; box-shadow:inset 15px 5px 10px 5px #FF4F5E; position: relative;">
+            <div class="row" style="margin-bottom: 50px; padding: 30px; background-color: white; position: relative;">
                 <div class="col-md-12 mb-4">
 							      <article class="item" data-key="${vid}">
                         <iframe width="700" height="700" src="https://www.youtube.com/embed/${vid}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
