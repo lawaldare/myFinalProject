@@ -33,7 +33,7 @@ $('#loginform').submit(function(event) {
             if(typeof(data) == 'object' && data.length > 0) {
                 window.location.replace('/pages/dashboard1.html');
             } else{
-				alert('User does not exist');
+				swal('User does not exist','Please check your details again');
             }
         };
         $.get(`http://localhost:3000/users/?username=${$('#username').val()}&password=${$('#password').val()}`, redirectToDashboard);

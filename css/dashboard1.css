@@ -82,18 +82,11 @@ h1 {
     border: 1px solid blue;
 }
 
-.loo {
-    background-color: red;
-}
-
-.rowyy {
-    border: 1px solid blue;
-}
 #myform select {
     border: 0;
     color: darkred;
     background: transparent;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     padding: 2px 10px;
     width: 378px;

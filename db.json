@@ -95,6 +95,30 @@
       "email": "a@j.com",
       "password": "aa",
       "id": 16
+    },
+    {
+      "username": "adefenwa",
+      "email": "isolo@oshodi.com",
+      "password": "laptop2014",
+      "id": 17
+    },
+    {
+      "username": "darrey",
+      "email": "lawaldare@gmail.com",
+      "password": "asd",
+      "id": 18
+    },
+    {
+      "username": "kanu",
+      "email": "kanu@yahoo.com",
+      "password": "kanu",
+      "id": 19
+    },
+    {
+      "username": "kanu",
+      "email": "kanu@gmail.com",
+      "password": "kanu",
+      "id": 20
     }
   ]
 }
