@@ -67,6 +67,12 @@ $('#target').change(function(){
     );  
   }); 
 
-        
+
+$('#logout').click(function(){
+
+  localStorage.clear();
+  window.location.replace('../index.html');
+});
+   
 });
 

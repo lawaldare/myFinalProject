@@ -77,11 +77,10 @@ h1 {
     letter-spacing: 10px;
 }
 .rowsy {
-    background: transparent;
+    background: none;
     border-radius: 10px;
     border: 1px solid blue;
 }
-
 #myform select {
     border: 0;
     color: darkred;
